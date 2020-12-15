@@ -109,9 +109,22 @@ body{
 .content-wp{
   border: 1px solid #eee;
   overflow: hidden;
+  padding: 10px;
+  margin-top: 10px;
+  input{
+    width: 100%;
+  }
   .content-left{
     float: left;
     padding: 15px;
+    background:#3179ac;
+    color: #fff;
+    h4{
+      text-align: center;
+      line-height: 2;
+      font-size: 20px;
+      font-weight: bold;
+    }
   }
   .content-right{
     overflow: hidden;
@@ -132,4 +145,68 @@ body{
   > h4{
 
   }
+}
+.search-wp{
+  display: flex;
+  background: #3179ac;
+  margin-top: 10px;
+  button{
+    background: #19405c;
+    color: #fff;
+    border-radius: 4px;
+    padding: 5px 18px;
+  }
+  .search-left{
+    padding: 0 10px 0 0;
+    flex: 1;
+  }
+  .search-right{
+    flex: 1;
+  }
+  .search-box{
+    margin-bottom: 15px;
+    h5{
+      margin-bottom: 10px;
+    }
+    h4{
+      font-size: 16px;
+      text-align: left;
+      font-weight: 100;
+    }
+  }
+}
+.search-tips{
+  line-height: 1.4;
+  font-size: 12px;
+  margin-top: 10px;
+}
+.content{
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #eee;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
 }

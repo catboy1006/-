@@ -6,6 +6,8 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <title>珠宝</title>
+    <link rel="stylesheet" href="../src/css/swiper-bundle.min.css">
+    <script src="../src/js/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
   </head>
   <body>
@@ -24,7 +26,15 @@
         <li>联系我们</li>
       </ul>
     </div>
-    <div class="banner"></div>
+    <div class="banner">
+      <!-- Swiper -->
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">Slide 1</div>
+          <div class="swiper-slide">Slide 2</div>
+        </div>
+      </div>
+    </div>
     <div class="content-box">
       <div class="content-title">中心珠宝鉴定中心</div>
       <div class="content-wp">
@@ -63,15 +73,25 @@
               </form>
             </div>
           </div>
-          <p>温馨提示：提示温馨提示：提示温馨提示：提示温馨提示：提示温馨提示：提示温馨提示：提示温馨提示：提示温馨提示：提示</p>
+          <p class="search-tips">温馨提示：提示温馨提示：提示温馨提示：提示温馨提示：提示温馨提示：提示温馨提示：提示温馨提示：提示温馨提示：提示</p>
         </div>
         <div class="content-right">
           图片内容
         </div>
       </div>
+      <div class="content">
+        <p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
+      </div>
     </div>
     <div class="footer">
       2019-2029 北京国首地矿珠宝检测中心版权所有 联系地址：北京市西城区新街口北大街59号万丰珠宝四层4038室
     </div>
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+        loop : true,
+        autoplay:true
+      });
+    </script>
   </body>
+
 </html>
